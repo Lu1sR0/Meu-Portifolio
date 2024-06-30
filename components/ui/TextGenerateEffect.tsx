@@ -33,7 +33,7 @@ export const TextGenerateEffect = ({
             <motion.span
               key={word + idx}
               // isso aq é pra mudar a cor da ultima frase do texto,se tiver mais texto é só aumentar o 3 pra 4
-              className={` ${idx > 10 ? "text-cyan-500" : "dark:text-white text-black"
+              className={` ${idx > 8 ? "text-cyan-500" : "dark:text-white text-black"
                 } opacity-0`}
             >
               {word}{" "}
