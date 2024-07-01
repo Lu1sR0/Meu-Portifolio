@@ -20,7 +20,7 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "Sempre estou em busca de aumentar o meu networking através do mundo",
+      title: "Sempre conectado",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
@@ -30,8 +30,8 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "Possuo conhecimento em:",
-      description: "Eu sempre estou em busca de melhorar e estou em constante processo de aprendizado.",
+      title: "Trabalho com:",
+      description: "Estou sempre em busca de melhorar.",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center",
