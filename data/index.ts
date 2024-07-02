@@ -71,39 +71,41 @@ export const navItems = [
       spareImg: "",
     },
   ];
-  
+  // c#: csharp-svgrepo-com.svg 
+  // css: css-svgrepo-com.svg 
+  // flutter: flutter-svgrepo-com.svg
+  // .NET: framework-net-svgrepo-com.svg
+  // HTML: html-5-svgrepo-com.svg
+  // Javascript: javascript-svgrepo-com.svg
+  // NOde.js: node-js-svgrepo-com.svg
+  // react: react-svgrepo-com.svg
+  //dart : dart-svgrepo-com.svg
+  //tailwind css : tail.svg
+  //typescript : ts.svg
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwiPnafz2YaHAxUpppUCHYMuDnIQPAgI",
+      title: "RetroGarage",
+      des: "Um projeto de uma loja de carros feito na ETEC Basilides de Godoy ,esse projeto foi feito pela minha empresa ficticia a qual eu atuei como Front-End,a sua porposta era ser somente uma página de exibição sem muitas funcionalidades",
+      img: "/lojadecarros.png",
+      iconLists: ["/css-svgrepo-com.svg", "/html-5-svgrepo-com.svg", "/javascript-svgrepo-com.svg"],
+      link: "https://retrogarage.netlify.app",
     },
+    // { Só copiar e colar isso para add outros projetos
+    //   id: 1,
+    //   title: "RetroGarage",
+    //   des: "Um projeto de uma loja de carros feito na ETEC Basilides de Godoy ,esse projeto foi feito pela minha empresa ficticia a qual eu atuei como Front-End,a sua porposta era ser somente uma página de exibição sem muitas funcionalidades",
+    //   img: "/lojadecarros.png",
+    //   iconLists: ["/css-svgrepo-com.svg", "/html-5-svgrepo-com.svg", "/javascript-svgrepo-com.svg"],
+    //   link: "https://retrogarage.netlify.app",
+    // },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
-    },
-    {
-      id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
-    },
-    {
-      id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      title: "Monte seu PC",
+      des: "Aplicativo desenvolvido para o usuario realizar a monstagem de um configuração que o agrade e salva-lá como PDF",
+      img: "/monteseupc.png",
+      iconLists: ["/dart-svgrepo-com.svg", "/flutter-svgrepo-com.svg",],
+      link: "https://monteseupc.netlify.app",
     },
   ];
   
