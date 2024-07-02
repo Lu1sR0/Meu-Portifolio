@@ -2,7 +2,6 @@
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
-import { Globe } from "./Globe";
 import Lottie from "react-lottie";
 import { useState } from "react";
 import animationData from "@/data/confetti.json";
@@ -134,6 +133,7 @@ export const BentoGridItem = ({
 
           {/* for the github 3d globe */}
           {id === 2 && <GlobeDemo/>}
+          
 
           {/* Tech stack list div */}
           {id === 3 && (

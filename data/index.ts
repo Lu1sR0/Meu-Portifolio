@@ -1,16 +1,17 @@
 /* Aqui é onde eu posso mudar todos que será mostrado para o usuário*/
 
 export const navItems = [
-    { name: "Sobre", link: "#sobre" },
+    { name: "Sobre mim", link: "#sobre" },
     { name: "Projetos", link: "#projetos" },
-    { name: "Rewies", link: "#reviews" },
+    // { name: "Rewies", link: "#reviews" }, quando eu tiver clientos eu ativo isso
+    { name: "Skills", link:"#skills"},
     { name: "Contato", link: "#contato" },
   ];
   
   export const gridItems = [
     {
       id: 1,
-      title: "Acredito na colaboração constante com os clientes para entregar projetos que superem as expectativas. ",
+      title: "Meu obejetivo é sempre entregar projetos que superem as expectativas. ",
       description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
@@ -51,7 +52,7 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Atualmente trabalhando em um projeto",
+      title: "Atualmente estudando Typescript",
       description: "Por dentro do código...",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -110,96 +111,97 @@ export const navItems = [
     {
       quote:
       "Seja meu primeiro e cliente e me fale oque achou do projeto entregue",
-      name: "Cliente",
-      title: "...",
+      name: "",
+      title: "", //cargo ou sla oque for aqui
     },
     {
       quote:
       "Seja meu primeiro e cliente e me fale oque achou do projeto entregue",
-      name: "Cliente",
-      title: "...",
+      name: "",
+      title: "", //cargo ou sla oque for aqui
     },
     {
       quote:
       "Seja meu primeiro e cliente e me fale oque achou do projeto entregue",
-      name: "Cliente",
-      title: "...",
+      name: "",
+      title: "", //cargo ou sla oque for aqui
     },
     {
       quote:
       "Seja meu primeiro e cliente e me fale oque achou do projeto entregue",
-      name: "Cliente",
-      title: "...",
+      name: "",
+      title: "", //cargo ou sla oque for aqui
     },
     {
       quote:
         "Seja meu primeiro e cliente e me fale oque achou do projeto entregue",
-      name: "Cliente",
-      title: "...",
+      name: "",
+      title: "", //cargo ou sla oque for aqui
     },
   ];
   
-  export const companies = [
-    {
-      id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
-    },
-    {
-      id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
-    },
-    {
-      id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
-    },
-    {
-      id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
-    },
-  ];
+  // Aqui posso trocar as empresas para por empresas que já fiz algum trabalho para elas 
+  // export const companies = [
+  //   {
+  //     id: 1,
+  //     name: "cloudinary",
+  //     img: "/cloud.svg",
+  //     nameImg: "/cloudName.svg",
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "appwrite",
+  //     img: "/app.svg",
+  //     nameImg: "/appName.svg",
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "HOSTINGER",
+  //     img: "/host.svg",
+  //     nameImg: "/hostName.svg",
+  //   },
+  //   {
+  //     id: 4,
+  //     name: "stream",
+  //     img: "/s.svg",
+  //     nameImg: "/streamName.svg",
+  //   },
+  //   {
+  //     id: 5,
+  //     name: "docker.",
+  //     img: "/dock.svg",
+  //     nameImg: "/dockerName.svg",
+  //   },
+  // ];
   
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "Entusiasta de Codificação Criativa",
+      desc: "Exploro e implemento técnicas de codificação criativa para desenvolver elementos web visualmente impressionantes e interativos, ultrapassando os limites do desenvolvimento front-end tradicional.",
       className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
+      thumbnail: "/icons8-idea-94.png",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+      title: "Desenvolvedor Web com Conhecimentos em Back-End",
+      desc: "Atuação no desenvolvimento de soluções web integradas, combinando habilidades front-end com experiência em back-end usando .NET e MySQL para garantir a eficiência e segurança das aplicações.",
       className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp2.svg",
+      thumbnail: "/icons8-code-100.png",
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+      title: "Desenvolvedor de Aplicativos Multiplataforma",
+      desc: "Construo aplicativos para plataformas iOS e Android usando Flutter, garantindo uma experiência de usuário fluida em todos os dispositivos",
       className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp3.svg",
+      thumbnail: "/icons8-multiple-devices-94.png",
     },
     {
       id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      title: "Cada Projeto é Ùnico",
+      desc: "Até mesmo o projeto mais simples sempre merece algo que faça-o se destacar no mundo digital",
       className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
+      thumbnail: "/icons8-fingerprint-94.png",
     },
   ];
   
