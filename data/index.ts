@@ -209,13 +209,21 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
+      caminho: "https://github.com/Lu1sR0"
     },
     {
       id: 2,
       img: "/twit.svg",
+      caminho:"https://x.com/Lu1sR_"
     },
     {
       id: 3,
       img: "/link.svg",
+      caminho: "https://www.linkedin.com/in/luis-roberto-cardoso-trindade-2852891b3/"
+    },
+    {
+      id: 4,
+      img: "/whatsapp-glyph-black-logo-svgrepo-com (1).svg",
+      caminho: "https://w.app/LR"
     },
   ];
