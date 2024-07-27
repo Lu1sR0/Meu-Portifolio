@@ -49,7 +49,7 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const leftLists = ["ReactJS", "Flutter", "HTML/CSS"];
-  const rightLists = ["Java", ".NET", "Javascript"];
+  const rightLists = ["Tailwind", "GIT", "Javascript"];
 
   const [copied, setCopied] = useState(false);
 
@@ -180,9 +180,9 @@ export const BentoGridItem = ({
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
-              <a href="mailto:luisrobertodeveloper@gmail.com">
+              <a href="https://drive.google.com/file/d/1U0j7BErqZaBR8r6GNTtPf1KFE13J3Wv7/view?usp=sharing">
                 <MagicButton
-                title="Entrar em contato"
+                title="Ver o meu currículo"
                 icon= {<FaLocationArrow/>}
                 position="rigth"
                 />

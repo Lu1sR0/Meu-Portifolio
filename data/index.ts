@@ -62,7 +62,7 @@ export const navItems = [
     },
     {
       id: 6,
-      title: "Tem algum projeto em mente?",
+      title: "Quer saber mais sobre mim?",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
@@ -96,14 +96,6 @@ export const navItems = [
       iconLists: ["/css-svgrepo-com.svg", "/html-5-svgrepo-com.svg", "/javascript-svgrepo-com.svg"],
       link: "https://retrogarage.netlify.app",
     },
-    // { Só copiar e colar isso para add outros projetos
-    //   id: 1,
-    //   title: "RetroGarage",
-    //   des: "Um projeto de uma loja de carros feito na ETEC Basilides de Godoy ,esse projeto foi feito pela minha empresa ficticia a qual eu atuei como Front-End,a sua porposta era ser somente uma página de exibição sem muitas funcionalidades",
-    //   img: "/lojadecarros.png",
-    //   iconLists: ["/css-svgrepo-com.svg", "/html-5-svgrepo-com.svg", "/javascript-svgrepo-com.svg"],
-    //   link: "https://retrogarage.netlify.app",
-    // },
     {
       id: 2,
       title: "Monte seu PC",
@@ -135,6 +127,14 @@ export const navItems = [
       img: "/apple.png",
       iconLists: ["/ts.svg", "/tail.svg", "/vite-svgrepo-com.svg","/gsap.svg","/three.svg"],
       link: "https://applelr.vercel.app",
+    },
+    {
+      id: 6,
+      title: "Monte seu Lego",
+      des: "Website com a finalidade do usuario montar seu boneco LEGO e depois compartilhar",
+      img: "/lego.png",
+      iconLists: ["/html-5-svgrepo-com.svg", "/css-svgrepo-com.svg", "/vite-svgrepo-com.svg","/javascript-svgrepo-com.svg"],
+      link: "https://monteseulego.netlify.app",
     },
   ];
   
