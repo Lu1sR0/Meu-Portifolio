@@ -28,7 +28,7 @@ const Hero = () => {
                 words="A cada dia transformando ideias em realidade com um toque de criatividade"
               />
               <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-              Olá, eu sou o Luis Roberto,um desenvolvedor front-end e mobile.
+              Olá, me chamo Luis Roberto,sou desenvolvedor Web com foco no front-end
               </p>
                 <a href="#sobre">
                   <MagicButton
