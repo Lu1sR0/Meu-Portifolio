@@ -41,7 +41,7 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Apenas um garoto apaixonado por tecnologia",
+      title: "Sou apaixonado por tecnologia",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
@@ -87,6 +87,7 @@ export const navItems = [
   //gsap : gsap.svg
   //three: three.svg
   //next: next.svg
+  //framer motion: framer-svgrepo-com.svg
   export const projects = [
     {
       id: 1,
@@ -123,10 +124,18 @@ export const navItems = [
     {
       id: 5,
       title: "Amazing Fantasy",
-      des: "Website para ler a primeira edição de homem aranha de uma forma mais interativa",
+      des: "Aplicativo da web para ler a primeira edição de homem aranha de uma forma mais interativa",
       img: "/miranha.png",
       iconLists: ["/react-svgrepo-com.svg", "/tail.svg", "/vite-svgrepo-com.svg","/three.svg"],
       link: "https://amazingfantasy.vercel.app",
+    },
+    {
+      id: 6,
+      title: "Personalize sua Camiseta",
+      des: " Este aplicativo da web interativo permite que os usuários criem seus próprios designs exclusivos de camisetas selecionando cores diferentes e enviando arquivos de logotipo. O projeto é construído usando a poderosa biblioteca three.js para renderização 3D",
+      img: "/criesuacamiseta.png",
+      iconLists: ["/react-svgrepo-com.svg", "/framer-svgrepo-com.svg", "/vite-svgrepo-com.svg","/three.svg"],
+      link: "https://criesuacamiseta.vercel.app",
     },
   ];
   

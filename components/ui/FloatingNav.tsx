@@ -1,13 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import {
-  motion,
-  AnimatePresence,
-  useScroll,
-  useMotionValueEvent,
-} from "framer-motion";
+import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
+import { FaGlobeAmericas, FaFlagUsa } from "react-icons/fa";
+import { GiBrazilFlag } from "react-icons/gi";
 
 export const FloatingNav = ({
   navItems,
@@ -21,25 +18,23 @@ export const FloatingNav = ({
   className?: string;
 }) => {
   const { scrollYProgress } = useScroll();
-
   const [visible, setVisible] = useState(false);
+  const [language, setLanguage] = useState("pt"); // pt for Portuguese, en for English
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
-    // Check if current is not undefined and is a number
     if (typeof current === "number") {
       let direction = current! - scrollYProgress.getPrevious()!;
-
       if (scrollYProgress.get() < 0.05) {
         setVisible(false);
       } else {
-        if (direction < 0) {
-          setVisible(true);
-        } else {
-          setVisible(true);
-        }
+        setVisible(true);
       }
     }
   });
+
+  const toggleLanguage = () => {
+    setLanguage(language === "pt" ? "en" : "pt");
+  };
 
   return (
     <AnimatePresence mode="wait">
@@ -72,7 +67,6 @@ export const FloatingNav = ({
             <span className="text-sm !cursor-pointer">{navItem.name}</span>
           </Link>
         ))}
-       
       </motion.div>
     </AnimatePresence>
   );

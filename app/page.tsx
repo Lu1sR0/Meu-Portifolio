@@ -9,6 +9,7 @@ import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
 import { navItems } from "@/data";
 import Footer from "@/components/Footer";
+import Destaque from "@/components/Destaque";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <FloatingNav navItems={navItems}/>
        <Hero />
        <Grid />
+       {/* <Destaque /> */}
        <RecentProjects />
        {/* <Clients /> */}
        <Experiencia />
