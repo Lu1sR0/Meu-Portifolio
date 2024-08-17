@@ -121,6 +121,7 @@ export const navItems = [
       iconLists: ["/html-5-svgrepo-com.svg", "/css-svgrepo-com.svg","/javascript-svgrepo-com.svg"],
       link: "https://monteseulego.netlify.app",
     },
+    
     {
       id: 5,
       title: "Amazing Fantasy",
