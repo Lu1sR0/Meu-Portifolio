@@ -87,6 +87,7 @@ export const navItems = [
   //gsap : gsap.svg
   //three: three.svg
   //next: next.svg
+  //sanity: sanity-svgrepo-com.svg
   //framer motion: framer-svgrepo-com.svg
   export const projects = [
     {
@@ -121,7 +122,6 @@ export const navItems = [
       iconLists: ["/html-5-svgrepo-com.svg", "/css-svgrepo-com.svg","/javascript-svgrepo-com.svg"],
       link: "https://monteseulego.netlify.app",
     },
-    
     {
       id: 5,
       title: "Amazing Fantasy",
@@ -137,6 +137,14 @@ export const navItems = [
       img: "/criesuacamiseta.png",
       iconLists: ["/react-svgrepo-com.svg", "/framer-svgrepo-com.svg", "/vite-svgrepo-com.svg","/three.svg"],
       link: "https://criesuacamiseta.vercel.app",
+    },
+    {
+      id: 7,
+      title: "Diário Cinéfilo",
+      des: " Este projeto foi um pedido de um amigo meu,ele queria um blog para postar criticas,artigos relacionados a arte. Apliquei conceitos importantes de SEO para aumentar a visibilidade deste projeto ",
+      img: "/diariocinefilo.png",
+      iconLists: ["/ts.svg", "tail.svg", "/next.svg","/sanity-svgrepo-com.svg" ,"/react-svgrepo-com.svg"],
+      link: "https://diariocinefilo.vercel.app",
     },
   ];
   
