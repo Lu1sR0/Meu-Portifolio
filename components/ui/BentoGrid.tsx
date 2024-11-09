@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
@@ -6,8 +6,8 @@ import Lottie from "react-lottie";
 import { useState } from "react";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
-import { IoChatbox, IoCopy, IoCopyOutline } from "react-icons/io5";
 import { FaLocationArrow } from "react-icons/fa6";
+import { AnimatedModalDemo } from "../ImagesModal";
 export const BentoGrid = ({
   className,
   children,
@@ -49,23 +49,13 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const leftLists = ["React.JS", "Three.JS", "HTML/CSS"];
-  const rightLists = ["Tailwind", "GIT", "Javascript"];
-
-  const [copied, setCopied] = useState(false);
+  const rightLists = ["Tailwind", "Next.js", "Javascript"];
 
   const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
     animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
-  };
-
-  const handleCopy = () => {
-    const text = "luiscardoso946@gmail.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
   };
 
   return (
@@ -83,7 +73,16 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
+            {id === 1 && (
+          <div className="relative flex items-center justify-center h-full w-full">
+            {/* Renderiza o seu componente AnimatedModalDemo */}
+            <div className="w-full h-full">
+              <AnimatedModalDemo />
+            </div>
+          </div>
+        )}
       {/* add img divs */}
+
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
@@ -95,8 +94,9 @@ export const BentoGridItem = ({
           )}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
-            } `}
+          className={`absolute right-0 -bottom-5 ${
+            id === 5 && "w-full opacity-80"
+          } `}
         >
           {spareImg && (
             <img
@@ -107,6 +107,7 @@ export const BentoGridItem = ({
             />
           )}
         </div>
+  
         {id === 6 && (
           // add background animation , remove the p tag
           <BackgroundGradientAnimation>
@@ -133,8 +134,7 @@ export const BentoGridItem = ({
           </div>
 
           {/* for the github 3d globe */}
-          {id === 2 && <GlobeDemo/>}
-          
+          {id === 2 && <GlobeDemo />}
 
           {/* Tech stack list div */}
           {id === 3 && (
@@ -145,20 +145,20 @@ export const BentoGridItem = ({
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-100 rounded-lg text-center bg-[#263cfd]"
                   >
                     {item}
                   </span>
                 ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#263cfd]"></span>
               </div>
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#263cfd]"></span>
                 {rightLists.map((item, i) => (
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-100 rounded-lg text-center bg-[#263cfd]"
                   >
                     {item}
                   </span>
@@ -168,25 +168,13 @@ export const BentoGridItem = ({
           )}
           {id === 6 && (
             <div className="mt-5 relative">
-              {/* button border magic from tailwind css buttons  */}
-              {/* add rounded-md h-8 md:h-8, remove rounded-full */}
-              {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
-              {/* add handleCopy() for the copy the text */}
-              <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
-              >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
-              </div>
-
-              <a href="https://drive.google.com/file/d/1U0j7BErqZaBR8r6GNTtPf1KFE13J3Wv7/view?usp=sharing">
+              <a href="cv definitivo .pdf" target="_blank">
                 <MagicButton
-                title="Ver o meu currículo"
-                icon= {<FaLocationArrow/>}
-                position="rigth"
+                  title="Ver o meu currículo"
+                  icon={<FaLocationArrow />}
+                  position="rigth"
                 />
-            </a>
+              </a>
             </div>
           )}
         </div>

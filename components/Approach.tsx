@@ -10,7 +10,7 @@ const Approach = () => {
       <h1 className="heading">
         Minha <span className="text-cyan-500">Abordagem</span>
       </h1>
-      <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
+      <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4 cursor-pointer">
         <Card title="Planejamento" icon={<AceternityIcon order="Fase 1" />}
         description="Colaboraremos para mapear os objetivos, o público-alvo e as principais funcionalidades do seu site ou aplicativo. Discutiremos coisas como estrutura do site, navegação e requisitos de conteúdo."
         

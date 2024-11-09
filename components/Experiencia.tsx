@@ -5,12 +5,12 @@ import { Button } from "./ui/MovingBorders";
 
 const Experiencia = () => {
   return (
-    <div className="py-20 w-full" id="skills">
+    <div className="py-20 w-full cursor-normal" id="skills">
       <h1 className="heading">
         Minhas <span className="text-cyan-500">Skills</span>
       </h1>
 
-      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10 cursor-normal">
         {workExperience.map((card) => (
           <Button
             key={card.id}
@@ -27,9 +27,9 @@ const Experiencia = () => {
               borderRadius: `calc(1.75rem* 0.96)`,
             }}
             // remove bg-white dark:bg-slate-900
-            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-normal"
           >
-            <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+            <div className="flex cursor-normal lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
               <img
                 src={card.thumbnail}
                 alt={card.thumbnail}

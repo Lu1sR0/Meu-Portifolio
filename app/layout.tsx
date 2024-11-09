@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 import { Analytics } from "@vercel/analytics/react";
+import { MeteorDemo } from "@/components/Meteors";
 
-const inter = Inter({ subsets: ["latin"] });
+const space_grostek = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Luis Roberto Portfólio",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 
   // SEO meta tags
   keywords:
-    "Luis Roberto, portfólio, desenvolvimento web, design gráfico, marketing digital, frontend, backend, React, Next.js",
+    "Luis Roberto, portfólio, desenvolvimento web, design gráfico, frontend, backend, React, Next.js",
   robots: "index, follow",
 
   // Open Graph (para compartilhamento em redes sociais)
@@ -47,7 +48,7 @@ export default function RootLayout({
           content="Wvz4f2fpr7DyWaqO4QyRvw5HhI5VkCmJoNffcLhY9t4"
         />
       </head>
-      <body className={inter.className}>
+      <body className={space_grostek.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

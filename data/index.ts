@@ -1,4 +1,3 @@
-/* Aqui é onde eu posso mudar todos que será mostrado para o usuário*/
 
 export const navItems = [
     { name: "Sobre mim", link: "#sobre" },
@@ -11,19 +10,19 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "Meu objetivo é sempre entregar projetos que superem as expectativas. ",
+      title: "Meu objetivo é sempre entregar projetos que superem as expectativas.",
       description: "",
-      className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+      className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] ${space_grotesk.className}",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",  
-      img: "/cliente.jpg",
+      img: "",  // Se você deseja renderizar o componente
       spareImg: "",
-    },
+    },   
     {
       id: 2,
       title: "Sempre conectado com o mundo",
       description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+      className: "lg:col-span-2 md:col-span-3 md:row-span-2 ${space_grotesk.className} ",
       imgClassName: "",
       titleClassName: "justify-start",
       img: "",
